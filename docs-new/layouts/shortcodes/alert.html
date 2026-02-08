@@ -1,0 +1,4 @@
+<div class="alert alert-{{ .Get "type" }}">
+<h4 class="alert-heading">{{ if .Get "title" }}{{ .Get "title" }}{{ else }}{{ .Get "type" }}{{ end }}</h4>
+{{ .Inner }}
+</div>
